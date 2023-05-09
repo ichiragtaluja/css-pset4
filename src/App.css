@@ -246,3 +246,31 @@
   background-color: rgb(69, 193, 255);
   color: white;
 }
+
+/* -----------q3---------- */
+
+.container {
+  display: flex;
+  flex-flow: row nowrap;
+  border: 1px solid black;
+  justify-content: space-around;
+  height: 45vw;
+}
+
+.container > * {
+  border: 1px solid black;
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 10px;
+  justify-content: space-evenly;
+}
+
+.container li {
+  list-style: none;
+}
+
+.container ul:not()
+
+.container > * > * {
+  border: 1px solid black;
+}
