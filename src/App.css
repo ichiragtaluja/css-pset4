@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
+  text-decoration: none;
 }
 
 .App {
@@ -124,16 +125,13 @@
   padding: 1em;
   margin: 50px auto;
   border: 5px solid rgb(40, 149, 40);
-  height: 70vh;
+  height: 60vh;
   width: 70vw;
   display: flex;
   flex-flow: column wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
-.review-layout > * {
-  border: 1px solid black;
-}
 .review-layout h1 {
   align-self: flex-start;
 }
@@ -142,26 +140,28 @@
   display: flex;
   /* flex-grow: 1; */
 }
+.order-items > :first-child {
+  /* border: 1px solid black; */
+  width: 15vh;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.order-items > :not(:first-child) {
+  /* border: 1px solid black; */
+  margin-left: 10px;
+  align-items: center;
+}
 
 .order-items > * {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   display: flex;
   flex-flow: column wrap;
 }
 
-.order-items > *:not(:first-child) {
-  align-items: center;
-}
-.order-items > :first-child {
-  flex-grow: 1;
-}
-
-.order-items > * > * {
-  border: 1px solid black;
-}
-
 .order-items span {
   text-transform: uppercase;
+  font-weight: 800;
 }
 
 .order-items > *:not(:first-child) p {
@@ -180,4 +180,69 @@
 .review-layout > :last-child {
   font-style: italic;
   align-self: center;
+}
+
+.grand-total {
+  display: flex;
+  flex-flow: column wrap;
+  height: 10vh;
+  justify-content: space-between;
+}
+
+.grand-total > * {
+  display: flex;
+  /* border: 1px solid black; */
+  justify-content: space-between;
+}
+
+.grand-total > :last-child {
+  font-weight: 800;
+}
+
+.grand-total > * > :last-child {
+  font-weight: 800;
+}
+
+/* --------q3---------- */
+
+.photo-gallery-container {
+  border: 1px solid black;
+  display: flex;
+  margin: auto;
+  flex-flow: column wrap;
+  align-items: center;
+  height: 50vw;
+  justify-content: space-evenly;
+}
+
+.links-container {
+  font-weight: 600;
+  align-self: stretch;
+  display: flex;
+  justify-content: space-evenly;
+}
+.photo-gallery-container img {
+  width: 25vw;
+  border-radius: 5px;
+  box-shadow: 0px 2px 25px -4px rgba(156, 156, 156, 1);
+}
+.photo-container {
+  /* border: 3px solid rgb(145, 0, 0); */
+  align-self: stretch;
+  display: flex;
+  justify-content: space-evenly;
+}
+.links-container a {
+  /* border: 1px solid black; */
+  padding: 10px 10px;
+  border-radius: 3px;
+  color: black;
+}
+.links-container a:hover {
+  background-color: rgb(69, 193, 255);
+  color: white;
+}
+.links-container a:active {
+  background-color: rgb(69, 193, 255);
+  color: white;
 }
