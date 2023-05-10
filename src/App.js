@@ -7,36 +7,49 @@ import { PhotoGallery } from "./components/PhotoGallery";
 function PricingTable() {
   return (
     <div className="container">
-      <div>
-        <p>One month free</p>
-        <h2>Basic Plan</h2>
-        <p>$9.99/mo</p>
+      <div className="card">
+        <div className="price-details">
+          <p>1 month free</p>
+          <h2>Basic Plan</h2>
+          <p>$9.99/mo</p>
+        </div>
+
         <hr />
-        <ul>
-          <li>Ad free music listening</li>
-          <li>Download 10k songs/device</li>
-          <li>Login from 3 devices</li>
-        </ul>
-        <button>Sign Up</button>
+        <div className="lower-body">
+          <ul>
+            <li>Ad free music listening</li>
+            <li>Download 10k songs/device</li>
+            <li>Login from 3 devices</li>
+          </ul>
+          <button>Sign Up</button>
+        </div>
       </div>
-      <div>
-        <p>One month free</p>
-        <h2>Pro Plan</h2>
-        <p>$19.99/mo</p>
+      <div className="card">
+        <div className="price-details">
+          <p>1 month free</p>
+          <h2>Pro Plan</h2>
+          <p>$19.99/mo</p>
+        </div>
+
         <hr />
-        <ul>
-          <li>Ad free music listening</li>
-          <li>Download 10k songs/device</li>
-          <li>Login from 5 devices</li>
-        </ul>
-        <button>Sign Up</button>
+        <div className="lower-body">
+          <ul>
+            <li>Ad free music listening</li>
+            <li>Download 10k songs/device</li>
+            <li>Login from 5 devices</li>
+          </ul>
+          <button>Sign Up</button>
+        </div>
       </div>
-      <div>
-        <p>One month free</p>
-        <h2>Enterprise Plan</h2>
-        <p>$59.99/mo</p>
+      <div className="card">
+        <div className="price-details">
+          <p>1 month free</p>
+          <h2>Enterprise Plan</h2>
+          <p>$59.99/mo</p>
+        </div>
+
         <hr />
-        <div>
+        <div className="lower-body">
           <ul>
             <li>Ad free music listening</li>
             <li>Download 10k songs/device</li>
